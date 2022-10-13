@@ -15,7 +15,6 @@ const StarshipsList = () => {
 
   return(
     <>
-      <h1>Starships!</h1>
       <div>
         {starships.length ?
         <>
