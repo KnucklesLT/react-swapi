@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import Pilots from "../../components/Pilots";
 import { getDetails } from "../../services/api-call";
 
 const StarshipPage = () => {
@@ -21,6 +22,8 @@ const StarshipPage = () => {
           <div className="detail ship-div">
             <h4>Name: {starshipDetails.name}</h4>
             <h4>Model: {starshipDetails.model}</h4>
+            <h4>Pilots: </h4>
+            <Pilots pilots = {starshipDetails.pilots}/>
             <Link className ='link' to='/'>RETURN</Link>
           </div>
         </div>

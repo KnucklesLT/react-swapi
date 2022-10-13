@@ -94,6 +94,12 @@ h4{
   margin: auto;
 }
 
+p{
+  font-size:medium;
+  margin: 2px;
+  margin-left: 20px;
+}
+
 h2{
   font-weight: 300;
 }
