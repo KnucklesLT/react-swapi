@@ -18,14 +18,13 @@ const Pilots = ({pilots}) => {
     <>
       {allPilots.map(pilots =>
         <p key={pilots.name}>{pilots.name}</p>
-        
         )}
     </>
     
       :
       
       <>
-        <h4>No Pilots</h4>
+        <p>No Pilots</p>
       </>
     }
     </>
