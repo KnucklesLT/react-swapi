@@ -26,7 +26,7 @@ const StarshipPage = () => {
         </div>
       :
       <>
-        <h4>Loading starship details</h4>
+        <h3>Loading starship details</h3>
       </>
     }
     </>

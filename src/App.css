@@ -50,15 +50,15 @@
   background: rgb(39, 70, 69);
   color: white;
   display: grid;
-  width: 200px;
-  height: 100px;
+  width: 300px;
+  height: 150px;
   justify-items: center;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 15px;
-  margin: 1rem;
-  border-radius: 3%;
+  border-radius: 8px;
+  font-size: 25px;
 }
 
 
@@ -81,6 +81,7 @@
 h4{
   padding: 10px;
   margin: 10px;
+  font-weight: 300;
 }
 .detail {
   width: auto;
@@ -91,4 +92,8 @@ h4{
   align-items: left;
   text-align: left;
   margin: auto;
+}
+
+h2{
+  font-weight: 300;
 }
