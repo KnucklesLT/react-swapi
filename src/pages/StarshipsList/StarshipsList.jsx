@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAllStarships } from "../services/api-call";
+import { getAllStarships } from "../../services/api-call";
 import { Link } from "react-router-dom";
 
 const StarshipsList = () => {
@@ -16,6 +16,26 @@ const StarshipsList = () => {
   return(
     <>
       <h1>Starships!</h1>
+      <div>
+        {starships.length ?
+        <>
+        {starships.map(starship => 
+          <Link key={starship.name} to='/starship' state={ {starship} }>
+            <div>
+              <h2>{starship.name}</h2>
+            </div>
+          </Link>
+        )}
+        </>
+        :
+        <>
+          <h3>Loading...</h3>
+        </>
+        
+      }
+
+      </div>
+
     </>
 
   )
