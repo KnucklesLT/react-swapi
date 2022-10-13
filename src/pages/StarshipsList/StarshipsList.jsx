@@ -15,12 +15,12 @@ const StarshipsList = () => {
 
   return(
     <>
-      <div>
+      <div className="container">
         {starships.length ?
         <>
         {starships.map(starship => 
-          <Link key={starship.name} to='/starship' state={ {starship} }>
-            <div>
+          <Link className ='link' key={starship.name} to='/starship' state={ {starship} }>
+            <div className="ship-div">
               <h2>{starship.name}</h2>
             </div>
           </Link>

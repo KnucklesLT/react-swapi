@@ -17,13 +17,13 @@ const StarshipPage = () => {
   return (  
     <>
       {starshipDetails.name ? 
-        <>
-          <div>
+        <div className="ship container">
+          <div className="detail ship-div">
             <h4>Name: {starshipDetails.name}</h4>
             <h4>Model: {starshipDetails.model}</h4>
-            <Link to='/'>Return</Link>
+            <Link className ='link' to='/'>RETURN</Link>
           </div>
-        </>
+        </div>
       :
       <>
         <h4>Loading starship details</h4>
